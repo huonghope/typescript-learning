@@ -24,3 +24,15 @@ Khuyên dùng sử dụng interface sau đó mới ưu tiên type: https://drive
 Dùng as để ép kiểu dữ liệu
 
 Generic : kiểu dữ liệu mà có nhận tham số và trả về kiểu dữ liệu tương ứng
+
+```
+Một số Utility Types phổ biến
+#Name  - #Desc
+1, Partial : Set all props of Type to optional : Thường dùng để update dữ liệu trước đó
+2, Required: Setll all props Type to Required : Dùng để chuyển option 1 interface thành required (Bắt buốc phải truyền dữ liệu)
+3, Readonly : Set all props of Type to Readonly : Chỉ đọc
+4, Record <Keys, Type> : A type with key from Keys and has value of Types : tạo dữ liệu (Phần Key và phần type sẽ được tạo trước và truyền vào)
+5, Pick<Type, Keys> : A type by picking a set ò Keys from Type : Cắt bỏ các key cần thiết, chọn lọc
+6, Omit<Type, Keys> : A type by omitting a set ò Keys from Type : Ngược với pick, sẽ loại trừ key không cần thiết và lấy hết những key còn lại
+7, ReturnType : The return type ò fuction type: trả về kiểu return của function
+```
